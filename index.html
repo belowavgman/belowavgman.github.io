@@ -9,16 +9,53 @@
 
   
 <body>
-
+  <p>Inline Frame 1 size 4x3</p>
+  
 <iframe src="https://embed.twitch.tv?channel=cesttrey&parent=belowavgman.github.io"
-        height="200"
-        width="200">  
-  </iframe>  
+        height="400"
+        width="300">  
+</iframe>  
+  
+  
+  
+  <p>Inline Frame 2 size 4x3 muted</p>
+  
+ <iframe src="https://embed.twitch.tv?channel=cesttrey&parent=belowavgman.github.io"
+        height="400"
+        width="300"
+        muted = true>  
+ </iframe>  
+  
+  <p>Inline Frame 3 size 4x3 theme light</p>
   
   <iframe src="https://embed.twitch.tv?channel=cesttrey&parent=belowavgman.github.io"
-        height="200"
-        width="200">  
+        height=400
+        width=300
+        theme = "light"> 
   </iframe>  
+  
+  
+  
+  <p>Inline 4 Javascript & lower resolution eventually</p?
+  
+  <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  
+  new Twitch.Player("twitch-embed", {
+    channel: "cesttrey"
+    width: 400
+    height: 400
+  });
+  
+</script>
+  
+  
   
 </body>
 </html>
